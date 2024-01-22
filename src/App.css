@@ -1,4 +1,9 @@
-
+.calculator-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+}
 .wrapper {
     background: #f6f8f9;
     width: 20rem;

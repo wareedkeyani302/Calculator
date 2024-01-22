@@ -4,7 +4,6 @@ import Wrapper from './components/Wrapper';
 import Screen from './components/Screen';
 import ButtonBox from './components/ButtonBox';
 import Button from './components/Button';
-import CalProvider from './context/CalContext';
 
 const App = () => {
   const btnValues = [
@@ -15,7 +14,7 @@ const App = () => {
     [0, ".", "="]
   ];
   return (
-    <CalProvider>
+    <div className = 'calculator-container'>
       <Wrapper>
         <Screen />
         <ButtonBox>
@@ -24,7 +23,7 @@ const App = () => {
           ))}
         </ButtonBox>
       </Wrapper>
-      </CalProvider>
+      </div>
   )
 }
 
